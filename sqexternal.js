@@ -1,4 +1,4 @@
-function contactUs() { /*this code was made by Wiktoria */
+function contactUs() { /*this code for the form was made by Wiktoria */
 	let formy = true; //formy is our flag 
 	let msg = "Form not completed: "; // if a field is empty, this message will display
 	//first name validation
@@ -35,5 +35,9 @@ function contactUs() { /*this code was made by Wiktoria */
 		document.getElementById("details").innerHTML = msg;
 	}
 	return formy;
-	
+}
+function swap(){
+			//go to the id of imgSwap = the img tag
+			//setAttribute of src to point to the new image
+				document.getElementById("imgSwap").setAttribute("src", "img/sq_self_portrait.jpg");
 }
