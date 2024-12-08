@@ -38,9 +38,9 @@ function contactUs() {
 	
 }
 
-document.getElementById('generateFactBtn').addEventListener('click', generateRandomFact);
+document.getElementById('generateFactBtn').addEventListener('click', generateRandomFact); /* detects when a click is made*/
 
-const facts = [
+const facts = [ /* is a arrey */
     "There is 45% more 20-minute neighbourhoods in the last decade!",
     "Only 10% of the world's homes are in a 20-minute neighbourhood!",
     "I in fact DO NOT live in a 20-minute neighbourhood.",
@@ -49,12 +49,18 @@ const facts = [
 	"All of these facts are completely made up!"
 ];
 
-function generateRandomFact() {
-    const randomIndex = Math.floor(Math.random() * facts.length);
-    const randomFact = facts[randomIndex];
-    document.getElementById('factDisplay').textContent = randomFact;
+function generateRandomFact() { 
+    const randomIndex = Math.floor(Math.random() * facts.length); /* generates a random indext based on the length of the array*/
+    const randomFact = facts[randomIndex]; /* selects a random fact */
+    document.getElementById('factDisplay').textContent = randomFact; /* replaces the fact display with a random selected fact */
 }
 
+function displayDate() {
+    const elements = document.querySelectorAll(".whattime"); /* selects whattime elements */
+    elements.forEach((element) => { /* loops through the whattime elements */
+        element.innerHTML = Date(); /* finds and sets the current date and time*/
+    });
+} 
 
 
 
@@ -62,11 +68,13 @@ let modalbutton = document.getElementById('modalbut');
 let modalcontainer = document.getElementById('container');
 let closemodal = document.getElementById('closemodal');
 
-modalbut.addEventListener('click', function(){
+modalbut.addEventListener('click', function(){ /* detects a click action */
 	
-	modalcontainer.style.display = 'block';
+	modalcontainer.style.display = 'block'; /* makes the modal container visible */
 });
 
 closemodal.addEventListener('click', function(){
 	container.style.display ='none';
-});
+}); /* closes function and event listener */
+
+document.getElementById('youcantseethis').textContent = 'New Text';
