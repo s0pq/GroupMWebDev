@@ -62,8 +62,6 @@ function displayDate() {
     });
 } 
 
-
-
 let modalbutton = document.getElementById('modalbut');
 let modalcontainer = document.getElementById('container');
 let closemodal = document.getElementById('closemodal');
@@ -77,4 +75,4 @@ closemodal.addEventListener('click', function(){
 	container.style.display ='none';
 }); /* closes function and event listener */
 
-document.getElementById('youcantseethis').textContent = 'New Text';
+
