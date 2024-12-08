@@ -261,41 +261,37 @@ h3 {
 		
 /* T'K'S SECTION END */
 /* S'Q'S SECTION */
+/*			SQ PAGE 1 START			*/
 .img-background{
-	background: url("img/sq_bg.jpg");
-	background-color: #ffffff;
+	background: url("img/sq_bg.jpg"); /* background image for both SQ pages*/
+	background-color: #ffffff;  /* this is set to white in case the background fails to load -sq */
 }
-.sqsc1{
-
+.sqsc1{ /* this is for the three images at the end of pg1 -sq*/
+	background-color: rgba(0, 255, 149, 0.7); /* colour is green, the 0.7 is the opacity -sq*/
+	border-radius: 10px; /* this rounds the corners of the outline -sq*/
+	padding: 10px;  /* this is the distance from the the image to the outline -sq*/
 }
-.sqsc2{
-
+.pg1parasq1{ /* most of my page 1 paragraphs link to this -sq*/
+	color: black;
+	background-color: rgba(0, 255, 149, 0.7);
+	border-radius: 12px 48px; /* these set the corners to different sharpnessess  -sq*/
+	padding: 20px; 
 }
-.sqsc3{
-
-}
-.sqgraph{
-
-}
-.pg1parasq1{
+.pg1parasq2{ /* for the paragraph linked to the JS -sq*/
 	color: black;
 	background-color: rgba(0, 255, 149, 0.7);
 	border-radius: 12px 48px;
 	padding: 20px;
 }
-.pg1parasq2{
+
+.sqparathreecol{ /* the three seperate columns -sq*/
 	color: black;
 	background-color: rgba(0, 255, 149, 0.7);
 	border-radius: 12px 48px;
 	padding: 20px;
+	margin-top: 20px; /* the vertical distance from the paragraph's original position -sq*/
 }
-.pg1parasq3{
-	color: black;
-	background-color: rgba(0, 255, 149, 0.7);
-	border-radius: 12px 48px;
-	padding: 20px;
-}
-.pg1form1sq{
+.pg1form1sq{  /* for the form -sq*/
 	color: black;
 	background-color: rgba(0, 255, 149, 0.7);
 	border-radius: 12px 48px;
@@ -310,43 +306,40 @@ h3 {
 	border-radius: 12px 48px;
 	padding: 20px;
 }
-.pg2parasq2{
-	color: black;
-	background-color: rgba(0, 255, 149, 0.7);
-	border-radius: 12px 48px;
-	padding: 20px;
-}
-.pg2parasq3{
-	color: black;
-	background-color: rgba(0, 255, 149, 0.7);
-	border-radius: 12px 48px;
-	padding: 20px;
-}
-.squf1{
+.squf1{ /* grid picture 1-sq*/
+	margin-left: 105px; /* the distance from the left of the original pic -sq*/
+	margin-top: 20px;
+} 
+.squf2{ /* grid picture 2 -sq*/
 	margin-left: 105px;
 	margin-top: 20px;
 } 
-.squf2{
-	margin-left: 105px;
-	margin-top: 20px;
-} 
-.squf3{
+.squf3{ /* grid picture 3 -sq*/
 	margin-left: -105px;
 	margin-top: 20px;
 }
-.squf4{
+.squf4{  /* grid picture 4 -sq*/
 	margin-left: -105px;
 	margin-top: 20px;
 } 
-.theFormsq{
+.theFormsq{ /* page 2 form -sq*/
 	color: black;
 	background-color: rgba(0, 255, 149, 0.7);
 	border-radius: 12px 48px;
 	padding: 40px;
 }
-.pq2form1sqtitle{
-	font-size: 40px;
+.pq2form1sqtitle{  /* the title for the page 2 form -sq*/
+	font-size: 40px
 }
+.sqdisplay{ /* this is the background for the team photos section -sq*/
+	color: black;
+	background-color: rgba(0, 255, 149, 0.7);
+	margin-top:50px;
+	margin-bottom: 50px;
+	border-radius: 12px 48px;
+	padding: 40px;
+}
+
 /* S.Q SECTION END  */
 
 
