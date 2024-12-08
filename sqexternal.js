@@ -1,7 +1,4 @@
-function radioSubmit(){
-	
-}
-function contactUs() { /*this code for the form was made by Wiktoria */
+function contactUs() { /*this code for the form was made by Wiktoria, used on page 2 */
 	let formy = true; //formy is our flag 
 	let msg = "Form not completed: "; // if a field is empty, this message will display
 	//first name validation
@@ -39,21 +36,24 @@ function contactUs() { /*this code for the form was made by Wiktoria */
 	}
 	return formy;
 }
-function random(){
-	let r = Math.floor(Math.random()*100000000) + 90000000;
+function random(){   //this is for showing an x amount of commuters on page 1
+	let r = Math.floor(Math.random()*100000000) + 90000000;  //the numbers are randomised between 90000000 and 100000000
 	let page = document.getElementById("commuter");
 	page.innerHTML = r;
 }
-function hidePara(){
+function mouseOver(){  //this is for when the move moves over a paragraph on page 2
+	document.getElementById("sqmouseOver").innerHTML ="Sorry! Accidentally leaked government files!";  //this replaces the paragraph when the mouse moves over it
+}
+function hidePara(){  //this is for hiding and showing the paragraph on page 1, taken from w3 schools
 	var x = document.getElementById("sqparahide");
 	if (x.style.display === "none") {
-		x.style.display = "block";
+		x.style.display = "block"; //allows the paragraph to show and hide forever
 	} else {
 		x.style.display = "none";
 	}
 }
-function showArray(){
-	myArray = new Array("passionate.", "concerned.", "educated.", "cool.", "very very very very well-informed.", "contributing. To society.", "steadfast in our aproach!");
-	randIndex = Math.floor(Math.random()*7);
-	document.getElementById("display").innerHTML = "Our team is... "+myArray[randIndex];
+function showArray(){ //this is the array from page 2, will print out a random block from the array
+	myArray = new Array("passionate.", "concerned.", "educated.", "cool.", "very very very very well-informed.", "contributing. To society.", "steadfast in our aproach!"); //all the elements from the array
+	randIndex = Math.floor(Math.random()*7); //randomises between the 7 of them
+	document.getElementById("display").innerHTML = "Our team is... "+myArray[randIndex]; // displays a random array with each click
 }
