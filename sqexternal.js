@@ -1,3 +1,6 @@
+function radioSubmit(){
+	
+}
 function contactUs() { /*this code for the form was made by Wiktoria */
 	let formy = true; //formy is our flag 
 	let msg = "Form not completed: "; // if a field is empty, this message will display
@@ -36,8 +39,21 @@ function contactUs() { /*this code for the form was made by Wiktoria */
 	}
 	return formy;
 }
-function swap(){
-			//go to the id of imgSwap = the img tag
-			//setAttribute of src to point to the new image
-				document.getElementById("imgSwap").setAttribute("src", "img/sq_self_portrait.jpg");
+function random(){
+	let r = Math.floor(Math.random()*100000000) + 90000000;
+	let page = document.getElementById("commuter");
+	page.innerHTML = r;
+}
+function hidePara(){
+	var x = document.getElementById("sqparahide");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+}
+function showArray(){
+	myArray = new Array("passionate.", "concerned.", "educated.", "cool.", "very very very very well-informed.", "contributing. To society.", "steadfast in our aproach!");
+	randIndex = Math.floor(Math.random()*7);
+	document.getElementById("display").innerHTML = "Our team is... "+myArray[randIndex];
 }
